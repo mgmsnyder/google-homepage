@@ -10,6 +10,7 @@
 		body {
 			display: flex;
 			flex-direction: column;
+			margin: 2px;
 			/* justify-content: center; */
 			/* align-items: center; */
 		}
@@ -32,12 +33,37 @@
 		div {
 			align-self: center;
 		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: rgba(128, 128, 128, 0.065);
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+		}
+		li a {
+			display: block;
+			text-align: center;
+			padding: 12px 8px;
+			text-decoration: none;
+			color: rgb(77, 77, 77);
+		}
 		.nav-left {
 			justify-content: left;
 			align-self: flex-start;
 		}
 		.nav-right {
 			justify-content: right;
+			/* align-self: flex-end; */
+		}
+		.foot-left {
+			float: left;
+			/* align-self: flex-start; */
+		}
+		.foot-right {
+			float: right;
 			/* align-self: flex-end; */
 		}
 		img {
@@ -74,7 +100,15 @@
 		<div>Country</div>
 		<hr />
 		<footer>
-			<div class="nav-left">
+			<ul>
+				<li class="foot-left"><a href="http://about">Advertising</a></li>
+				<li class="foot-left"><a href="http://Store">Business</a></li>
+				<li class="foot-left"><a href="http://Store">How Search Works</a></li>
+				<li class="foot-right"><a href="http://images">Privacy</a></li>
+				<li class="foot-right"><a href="http://icon">Terms</a></li>
+				<li class="foot-right"><a href="http://avatar">Settings</a></li>
+			</ul>
+			<!-- <div class="nav-left">
 				<a href="http://about">Advertising</a>
 				<a href="http://Store">Business</a>
 				<a href="http://Store">How Search Works</a>
@@ -83,7 +117,7 @@
 				<a href="http://images">Privacy</a>
 				<a href="http://icon">Terms</a>
 				<a href="http://avatar">Settings</a>
-			</div>
+			</div> -->
 		</footer>
 	</body>
 </html>
