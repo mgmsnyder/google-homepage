@@ -10,13 +10,27 @@
 		body {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			/* justify-content: center; */
+			/* align-items: center; */
 		}
 		header {
 			display: flex;
 			flex-direction: row;
+			align-items: flex-end;
 			justify-content: space-between;
 			background-color: wheat;
+		}
+		footer {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+			justify-content: space-between;
+			background-color: wheat;
+			/* position: absolute; */
+			bottom: 0px;
+		}
+		div {
+			align-self: center;
 		}
 		.nav-left {
 			justify-content: left;
@@ -30,6 +44,9 @@
 			background-color: rgb(179, 245, 196);
 			/* justify-content: center; */
 			align-self: center;
+		}
+		hr {
+			width: 100%;
 		}
 	</style>
 
@@ -46,6 +63,25 @@
 				<a href="http://avatar">Avatar</a>
 			</div>
 		</header>
-		<h1>Hello World but is it true?</h1>
+		<h1>Google Image</h1>
+		<div id="search-bar" style="background-color: tomato">Search bar</div>
+		<div id="search-buttons">Button Another Button</div>
+		<div id="language-option">
+			Google offered in: <a href="http://language">language link</a>
+		</div>
+		<div>Country</div>
+		<hr />
+		<footer>
+			<div class="nav-left">
+				<a href="http://about">Advertising</a>
+				<a href="http://Store">Business</a>
+				<a href="http://Store">How Search Works</a>
+			</div>
+			<div class="nav-right">
+				<a href="http://images">Privacy</a>
+				<a href="http://icon">Terms</a>
+				<a href="http://avatar">Settings</a>
+			</div>
+		</footer>
 	</body>
 </html>
