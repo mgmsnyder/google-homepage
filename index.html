@@ -34,6 +34,12 @@
 		div {
 			align-self: center;
 		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-self: center;
+			align-content: center;
+		}
 		div a {
 			text-decoration: none;
 			color: black;
@@ -52,6 +58,26 @@
 		#country-pad {
 			padding-left: 33px;
 			color: rgba(77, 77, 77, 0.774);
+		}
+		#logo {
+			padding-top: 44px;
+			padding-bottom: 15px;
+		}
+		#search-input {
+			width: 70%;
+			height: 20px;
+			border-radius: 1em;
+			border-width: 1px;
+			border-color: rgba(63, 63, 63, 0.116);
+			border-style: solid;
+			background-image: url(https://www.w3schools.com/css/searchicon.png);
+			padding-left: 25px;
+			background-repeat: no-repeat;
+			background-position: 1px 1px;
+		}
+		#search-buttons {
+			padding: 10px;
+			align-self: center;
 		}
 		ul {
 			list-style-type: none;
@@ -99,7 +125,7 @@
 		}
 		hr {
 			width: 100%;
-			height: 1px;
+			border: 1px thin;
 			position: fixed;
 			bottom: 31px;
 			border-color: rgba(196, 196, 196, 0.116);
@@ -120,12 +146,19 @@
 			</div>
 		</header>
 		<img
+			id="logo"
 			src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
 		/>
-		<div id="search-bar"><input type="text" /></div>
-		<div id="search-buttons">Button Another Button</div>
+		<form>
+			<input type="text" id="search-input" />
+			<div id="search-buttons">
+				<input type="button" value="Google Search" />
+				<input type="button" value="I'm Feeling Lucky" />
+			</div>
+		</form>
 		<div id="language-option">
-			Google offered in: <a href="http://language" id="lang-link">Language link</a>
+			Google offered in:
+			<a href="http://language" id="lang-link">Language link</a>
 		</div>
 		<div id="country"><div id="country-pad">Country</div></div>
 		<hr />
